@@ -4,14 +4,25 @@ The TCP/IP model has four layers
 
 ## Aplications
 
-includes protocals 
+Includes Protocals 
 
 - SSH
 - WWW
 - Email
+- SMS
+- VOIP
 
 ## Transport
 
+- Packets
+- TCP
+- UDP
+
 ## Internet 
 
+- IP
+
 ## Link
+
+- Text
+- Hyperlinks
