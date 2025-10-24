@@ -1,72 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="styles.css">
-		<title>Oscars recipes</title>
-		<script src="../../js/validate.js"></script>
-		<style>
-			body {
-				background-color: #000;
-				color: #fff;
-			}
-			table {
-				background-color: #222;
-				color: #fff;
-				border-color: #fff;
-			}
-			th, td {
-				border: 1px solid #fff;
-			}
-			a {
-				color: #80bfff;
-			}
-		</style>
-	</head>
-	<body>
-	
-		<p>Hi, I'm Oscar and this aint AI</p>
-		<table border="1" cellspacing="0" cellpadding="8">
-			<tr>
-				<th>Recipes Name</th>
-				<th>Recipes Name</th>
-			</tr>
-			<tr>
-				<td>Apple Pie</td>
-				<td>Carrot Pie</td>
-			</tr>
-			<tr>
-				<th>Ingredients</th>
-				<th>Ingredients</th>
-			</tr>
-			<tr>
-				<td>
-					<ul>
-						<li>Apples</li>
-						<li>Sugar</li>
-						<li>Flour</li>
-						<li>Butter</li>
-						<li>Cinnamon</li>
-					</ul>
-				</td>
-				<td>
-					<ul>
-						<li>Carrots</li>
-						<li>Sugar</li>
-						<li>Flour</li>
-						<li>Butter</li>
-						<li>Nutmeg</li>
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<th>Images</th>
-				<th>Images</th>
-			</tr>
-			<tr>
-				<td><img src="apple-pie.jpg" alt="Apple Pie" width="200"></td>
-				<td><img src="carrot-pie.jpg" alt="Carrot Pie" width="200"></td>
-			</tr>
-		</table>
-	</body>
+<head>
+  <meta charset="UTF-8">
+  <title>Oscar's Recipes</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="../../js/validate.js"></script>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+    table {
+      background-color: #222;
+      color: #fff;
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1em 0;
+    }
+    th, td {
+      border: 1px solid #fff;
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background-color: #333;
+    }
+    a {
+      color: #80bfff;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <p>Hi, I'm Oscar and this aint AI</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Recipe Name</th>
+        <th>Recipe Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Apple Pie</td>
+        <td>Carrot Pie</td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Ingredients:</strong>
+          <ul>
+            <li>Apples</li>
+            <li>Sugar</li>
+            <li>Flour</li>
+            <li>Butter</li>
+            <li>Cinnamon</li>
+          </ul>
+        </td>
+        <td>
+          <strong>Ingredients:</strong>
+          <ul>
+            <li>Carrots</li>
+            <li>Sugar</li>
+            <li>Flour</li>
+            <li>Butter</li>
+            <li>Nutmeg</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Image:</strong><br>
+          <img src="apple-pie.jpg" alt="Apple Pie" width="200">
+        </td>
+        <td>
+          <strong>Image:</strong><br>
+          <img src="carrot-pie.jpg" alt="Carrot Pie" width="200">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
 </html>
