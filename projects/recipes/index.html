@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Oscar&#39;s Recipes</title>
- <script src="../../js/validate.js"></script>
- <script src="../../js/validate.js"></script>
+  <!-- Only include validate.js once -->
+  <script src="../../js/validate.js"></script>
   <style>
     body {
       background-color: #000;
@@ -37,7 +37,7 @@
   </style>
 </head>
 <body>
-  <p>Hi,im Oscar and this are my favorite recipes.</p>
+  <p>Hi, I'm Oscar and these are my favorite recipes.</p>
   <table>
     <thead>
       <tr>
@@ -79,7 +79,8 @@
         </td>
         <td>
           <strong>Image:</strong><br>
-          <img src="carrot-pie.jpg" alt="Carrot Pie" width="200" length="200">
+          <!-- Remove invalid 'length' attribute -->
+          <img src="carrot-pie.jpg" alt="Carrot Pie" width="200">
         </td>
       </tr>
     </tbody>
